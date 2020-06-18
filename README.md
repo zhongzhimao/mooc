@@ -17,6 +17,7 @@
 
 2.	点击立即体验，然后你会下载一个.exe文件，下载完成后双击打开
 安装完成后，用360极速浏览器打开[点击打开](https://ext.chrome.360.cn/webstore/search/Tampermonkey)
+
 ![image](https://img-blog.csdnimg.cn/20200315163309477.png)
 
 3.	确认添加脚本
@@ -25,6 +26,7 @@
 ![image](https://img-blog.csdnimg.cn/20200315163403821.png)
 
 4.	打开[点击进入](https://greasyfork.org/zh-CN/scripts/399230)
+
  ![image](https://img-blog.csdnimg.cn/20200315163457108.png)
  ![image](https://img-blog.csdnimg.cn/20200315163509415.png)
 
@@ -52,15 +54,18 @@
 3.2 刷文档的时候不会翻页，但是后台会有记录，刷完之后会自动跳转到下一个内容。
 3.3 刷课的自动讨论功能会自动复制粘贴讨论区最长的一条讨论
 3.4 刷课的时候不可以将浏览器最小化、不可以切换出当前页面（如下图所示）
+
  ![image](https://img-blog.csdnimg.cn/20200315165715488.png)
  ![image](https://img-blog.csdnimg.cn/20200315170019380.png)
  
 3.5 不建议设置倍速，因为老师后台能看到你的学习时长，后台记录的是你的实际播放时间，而不是视频的时长。
 3.6 可以多开浏览器同时刷视频，只要不最小化、不切出视频页面就行。如果刷完后学习时长没有更新，可能是mooc网站的问题，可以等一天后再看。
+
  ![image](https://img-blog.csdnimg.cn/2020031517005750.png)
  
 4.自定义设置
 按如下方式打开tampermonkey的脚本编辑器
+
  ![image](https://img-blog.csdnimg.cn/20200315170121997.png)
  ![image](https://img-blog.csdnimg.cn/20200315170202561.png)
  
@@ -68,6 +73,7 @@
  
 5.积分和cdkey
 新用户自带50积分，使用完后需要捐赠获取积分才能继续答题，获取积分的方法如下：
+
  ![image](https://img-blog.csdnimg.cn/20200315170233349.png)
  
 随后会跳转到支付页面，然后输入捐赠金额，点击确定
