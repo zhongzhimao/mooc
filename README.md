@@ -5,9 +5,13 @@
 有不懂的小伙伴可以关注我CSDN博客：听说你很会玩，https://blog.csdn.net/qq_44224698
 
 刷课脚本代码实时更新哦！
+
 使用教程：
+
 由于之前的脚本被greasyfork删除，老用户如不能使用请去greasyfork搜索domooc然后重新安装，安装之前请备份好cdkey，方法见文档末尾
+
 一、安装
+
 1.	打开https://browser.360.cn/ee/
 2.	点击立即体验，然后你会下载一个.exe文件，下载完成后双击打开
 安装完成后，用360极速浏览器打开https://ext.chrome.360.cn/webstore/search/Tampermonkey
