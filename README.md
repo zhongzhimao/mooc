@@ -12,7 +12,10 @@
 
 一、安装
 
-1.	打开https://browser.360.cn/ee/
+1.打开[360极速浏览器](https://browser.360.cn/ee/)
+
+![image](https://img-blog.csdnimg.cn/20200315163309477.png)
+
 2.	点击立即体验，然后你会下载一个.exe文件，下载完成后双击打开
 安装完成后，用360极速浏览器打开https://ext.chrome.360.cn/webstore/search/Tampermonkey
 
