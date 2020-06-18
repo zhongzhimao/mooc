@@ -14,41 +14,33 @@
 
 1.打开[360极速浏览器](https://browser.360.cn/ee/)
 
-![image](https://img-blog.csdnimg.cn/20200315163309477.png)
 
 2.	点击立即体验，然后你会下载一个.exe文件，下载完成后双击打开
-安装完成后，用360极速浏览器打开https://ext.chrome.360.cn/webstore/search/Tampermonkey
+安装完成后，用360极速浏览器打开[点击打开](https://ext.chrome.360.cn/webstore/search/Tampermonkey)
+![image](https://img-blog.csdnimg.cn/20200315163309477.png)
 
 3.	确认添加脚本
 
+![image](https://img-blog.csdnimg.cn/20200315163341852.png)
+![image](https://img-blog.csdnimg.cn/20200315163403821.png)
 
+4.	打开[点击进入](https://greasyfork.org/zh-CN/scripts/399230)
+ ![image](https://img-blog.csdnimg.cn/20200315163457108.png)
+ ![image](https://img-blog.csdnimg.cn/20200315163509415.png)
 
+安装完成后，打开[点击访问](https://www.icourse163.org) ，随意点开一门课的测验页面，如果出现下图右边的面板，即表示加载成功
+![image](https://img-blog.csdnimg.cn/20200315163610366.png)
 
-4.	打开https://greasyfork.org/zh-CN/scripts/399230
- 
- 
-
-
-
-
-
-
-
-
-
-
-安装完成后，打开https://www.icourse163.org，随意点开一门课的测验页面，如果出现下图右边的面板，即表示加载成功
 二、使用说明
 1. 答题
-1.1 有答案的测验会被标记为绿色，并在下方显示题库拥有的答案数，如图所示。
- 
+1.1 有答案的测验会被标记为绿色，没有答案的被标记为红色，会一直显示为红色。
 1.2 如果你是第一个进入这门课的人，右侧可能会显示暂无答案的提示，请稍等五分钟，然后刷新。
  
 
 1.3 如果是才出的测验，可能题库没有更新，请点击如下按钮，稍等几分钟后刷新即可。
  
 1.4 如果SPOC课程中没有源课程测验的答案，请先打开源课程的主页，进入测验页面，点击“无答案？点击获取”按钮，然后稍等几分钟即可。
- 
+ [image](https://img-blog.csdnimg.cn/20200315165513808.png)
 
 1.5 进入一个被标记为绿色的测验后，你可以点击如下按钮获取答案
 注意，作业题查看答案显示的是评分标准，有时候可能对答题毫无帮助，如遇这种情况不退还积分。
