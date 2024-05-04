@@ -1,21 +1,34 @@
 // ==UserScript==
 // @name         中国大学慕课mooc答题/自动播放脚本(domooc)
 // @namespace    https://domooc.top/
-// @version      2.1.0
-// @description  自动完成你的mooc考试测验客观题，开始刷课后自动看视频、看课件、自动讨论。使用过程中会上传您的mooc账户信息（包括昵称、ID、邮箱等）以识别用户。免费用户有20初始积分，可以回答20题，使用完后需要付费充值获取积分。
+// @version      2.1.1
+// @description  自动完成你的mooc考试测验客观题，开始刷课后自动看视频、看课件、自动讨论。使用过程中会上传您的mooc账户信息（包括昵称、ID、邮箱等）以识别用户。免费用户有50初始积分，可以回答50题，使用完后需要付费充值获取积分。
 // @author       ExTedic
-// @match        *.icourse163.org/*
+// @match        http://*.icourse163.org/*
+// @match        https://*.icourse163.org/*
 // @connect      domooc.top
 // @connect      *
 // @grant        unsafewindow
 // @grant        GM_xmlhttpRequest
 // @grant        GM_getValue
 // @grant        GM_setValue
+// @grant        GM_registerMenuCommand
 // @run-at       document-start
 // ==/UserScript==
 (function(){
-    let nopanel = false; //不显示一切信息，仅保留自动答题功能，不会显示题库答案数、答案、右侧面板，适合考试用。此模式会自动获取答案并填写,请确保您的积分充足。
-    
+    let nopanel = GM_getValue('nopanel'); //不显示一切信息，仅保留自动答题功能，不会显示题库答案数、答案、右侧面板，适合考试用。此模式会自动获取答案并填写,请确保您的积分充足。
+    GM_registerMenuCommand("显示/关闭插件面板", function() {
+        GM_setValue('nopanel',!nopanel);
+        if(nopanel){
+            alert('切换成功，请刷新页面！')
+        }else{
+            alert('切换成功，请刷新页面！\n此模式下将自动获取答案并作答，请确保积分充足！')
+        }
+      });
+    GM_registerMenuCommand("重新安装脚本", function() {
+        ['script_version','domoocbox','antiantiscript','usersetting'].forEach(key=>GM_setValue(key,undefined))
+        window.open("https://domooc.top/domoocinstall");
+      });
     let $ = (function(window, noGlobal) {
         "use strict";
         var arr = [];
@@ -7927,7 +7940,9 @@
 
     let tag = "domooc";
     let window = unsafeWindow;
-    let baseurl = 'domooc.top';
+
+
+    let baseurl = 'https://domooc.top';
     let antiantiscript;
     if(tag!="domooc"){
         antiantiscript = GM_getValue("antiantiscript");
@@ -7944,7 +7959,7 @@
     let script=GM_getValue("script");
     GM_xmlhttpRequest({
         method: "GET",
-        url: `https://${baseurl}/api/scriptversion?version=${lastv}&tag=${tag}`,
+        url: `${baseurl}/api/scriptversion?version=${lastv}&tag=${tag}`,
         headers: {
             charset: "UTF-8",
             "Content-Type": "text/plain",
@@ -7957,7 +7972,7 @@
                 if(lastv!==parseInt(res.cversion)){
                     GM_xmlhttpRequest({
                         method: "GET",
-                        url: `https://${baseurl}/static/tampermonkey/domooc_LTS/${res.cversion}.js`,
+                        url: `${baseurl}/static/tampermonkey/domooc_LTS/${res.cversion}.js?time=`+(new Date().getTime()),
                         headers: {
                             charset: "UTF-8",
                             "Content-Type": "text/plain",
